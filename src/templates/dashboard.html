@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dashboard</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!--style-css files-->
+    <link rel="stylesheet" type="text/css" href="assets/style/style-global.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Heebo|Quicksand" rel="stylesheet">
+<!--style-css files-->
+
+<!--fontawesome css files-->
+    <link rel="stylesheet" type="text/css" href="assets/animate/animate.css">
+<!--fontawesome css files-->
+
+<!--owlcarousel-->
+    <link rel="stylesheet" type="text/css" href="assets/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/OwlCarousel/dist/assets/owl.theme.default.min.css">
+<!--owlcarousel-->
+
+<!--fontawesome css files-->
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
+<!--fontawesome css files-->
+
+<!--javascript files-->
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+<!--javascript files-->
+
+<!--popper-->
+    <script src="assets/bootstrap/assets/js/vendor/popper.min.js"></script>
+<!--popper-->
+
+<!--bootstrap css files dihapus dulu-->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/bootstrap/dist/css/bootstrap.min.css"> -->
+<!--bootstrap css files-->
+
+<!--scroll reveal-->
+    <script type="text/javascript" src="assets/scrollreveal/dist/scrollreveal.min.js"></script>
+<!--scroll reveal-->
+
+<!--bootstrap js files-->
+    <script type="text/javascript" src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
+<!--bootstrap js files-->
+
+<!--jquery carousel-->
+    <script type="text/javascript" src="assets/OwlCarousel/dist/owl.carousel.min.js"></script>
+<!--jquery carousel-->
+<style>
+body{
+  background: url("images/background_biru.jpg") no-repeat fixed 0 0 #000;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+.img-cctv1{
+  width: auto;
+  height: 300px;
+  margin-left: 50pt;
+}
+.img-cctv2{
+  width: auto;
+  height: 300px;
+  margin-left: 50pt;
+}
+.bagian-atas{
+  margin-top: 20px;
+}
+.bagian-bawah{
+  margin-top: 20px;
+}
+.div-rounded{
+  margin-top: 20px;
+  border-radius: 25px 25px 0px 0px;
+  background: black;
+  width: 400px;
+  height: 140px;
+}
+.div-rounded2{
+  border-radius: 0px 0px 25px 25px;
+  background: white;
+  width: 400px;
+  height: 140px;
+}
+.atas-kanan{
+  margin-left: -40px;
+}
+.txt-plat{
+  color: white;
+  font-size: 25pt;
+  font-family: Quicksand;
+  margin-top: 40px;
+}
+.txt-plat2{
+  color: white;
+  font-size: 25pt;
+  font-family: Quicksand;
+}
+.kotak-hitam{
+  width: 400px;
+  height: 140px;
+}
+.kotak.putih{
+  width: auto;
+  height: 140px;
+  background: white;
+}
+.masuk{
+  color: black;
+  font-size: 15pt;
+  font-family: Quicksand;
+}
+.jam{
+  color: black;
+  font-size: 25pt;
+  font-family: Quicksand;
+}
+.available-parkir{
+  margin-left: -20pt;
+  color: orange;
+  font-size: 50pt;
+  font-family: Quicksand;
+}
+.parkir-txt{
+  color: white;
+  font-size: 22pt;
+  font-family: Quicksand;
+}
+.gabung{
+  margin-left: 60pt;
+  margin-top: 110pt;
+}
+.kanan-bawah{
+  width: auto;
+  height: auto;
+}
+.inside{
+  border-radius: 25px;
+  background: white;
+}
+.kanan-bawah{
+
+}
+.biru{
+  color: #3498db;
+}
+table {
+  width:100%;
+}
+table, th, td {
+  border: 0px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 25px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-sm-6 bagian-atas">
+        <span><img class="img-responsive img-center img-cctv1" src="images/cctv.jpg"></span>
+      </div>
+      <div class="col-sm-6 atas-kanan">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="col-sm-6 div-rounded text-center">
+              <p class="txt-plat"><strong>B 1493 RTO</strong></p>
+            </div>
+            <div class="col-sm-6 div-rounded2">
+              <div style="margin-left: 10px;">
+                <br><p class="masuk">Masuk</p>
+                <p class="jam"><strong>09:00</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 parkir">
+            <div class="gabung">
+              <br><p class="parkir-txt">Parkir Tersedia</p>
+              <p class="available-parkir text-center"><strong>300</strong></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 bagian-bawah">
+        <span><img class="img-responsive img-center img-cctv2" src="images/cctv.jpg"></span>
+      </div>
+      <div class="col-sm-6" style="margin-left: -50px;">
+        <div class="kanan-bawah container-fluid">
+          <div class="inside" style="margin-top: 30px">
+            <table>
+              <tr>
+                <th><p class="biru">Golongan Kendaraan</p></th>
+                <th><p class="biru">I</p></th>
+                <th><p class="biru">II</p></th>
+                <th><p class="biru">III</p></th>
+                <th><p class="biru">IV</p></th>
+                <th><p class="biru">V</p></th>
+              </tr>
+              <tr>
+                <td>Mobil di rest area</td>
+                <td>124</td>
+                <td>53</td>
+                <td>14</td>
+                <td>3</td>
+                <td>34</td>
+              </tr>
+              <tr>
+                <td>Mobil masuk ke rest area hari ini</td>
+                <td>124</td>
+                <td>34</td>
+                <td>53</td>
+                <td>14</td>
+                <td>3</td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
