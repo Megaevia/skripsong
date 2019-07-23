@@ -16,11 +16,8 @@ def create():
 
     user_in_db = UserModel.get_user_by_email(data.get('email'))
     if user_in_db:
-<<<<<<< HEAD
         message = {'error': 'Email already exist, please use another email'}
-=======
         message = {'error': 'Email sudah digunakan, silahkan gunakan email lainnya'}
->>>>>>> origin/master
         return custom_response(message, 400)
 
     user = UserModel(data)
@@ -38,11 +35,8 @@ def login():
     if error:
         return custom_response(error, 400)
     if not data.get('email') or not data.get('password'):
-<<<<<<< HEAD
         return custom_response({'error': 'you need email and password to login'}, 400)
-=======
-        return custom_response({'error': 'you need email and password to sign in'}, 400)
->>>>>>> origin/master
+        #return custom_response({'error': 'you need email and password to sign in'}, 400)
 
     user = UserModel.get_user_by_email(data.get('email'))
     if not user:
