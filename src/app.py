@@ -7,7 +7,7 @@ from .views.userView import user_api as user_blueprint
 def create_app(env_name):
     app = Flask(__name__)
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://postgres:megaevia27@localhost:5432/skripsong"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://postgres:""@localhost:5432/skripsong"
 
     bcrypt.init_app(app)
     db.init_app(app)

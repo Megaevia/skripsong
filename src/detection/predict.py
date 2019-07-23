@@ -5,7 +5,7 @@ from keras import backend as K
 import numpy as np
 from keras.preprocessing.image import img_to_array, load_img
 
-path = Path("C:/Users/Mega Evia Maharani/PycharmProjects/skripsong/src/detection")
+path = Path("/home/tmjskripsi/kelompoknada/skripsong/src/detection")
 
 class predictionPicture():
     @staticmethod
