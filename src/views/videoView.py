@@ -42,7 +42,11 @@ def create():
     video_save.save()
 
     #ser_data = video_schema.dump(video_save).data
+<<<<<<< HEAD
     return custom_response({"Golongan": golongan, "Hasil_prediksi": hasil_prediksi, "gambar": predict}, 200)
+=======
+    return custom_response({"Golongan": golongan, "Hasil_prediksi": hasil_prediksi}, 200)
+>>>>>>> origin/master
     #return custom_response({"Data di database :": ser_data, "Hasil Prediksi :": hasil_prediksi, "Golongan: ": golongan},200)
 
 @video_api.route('/get/golongan', methods=['GET'])
@@ -50,7 +54,10 @@ def get_golongan():
     golongan1 = VideoModel.filter_gol1()
     golongan2 = VideoModel.filter_gol2()
     golongan3 = VideoModel.filter_gol3()
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
     return custom_response({"Golongan_1":golongan1, "Golongan_2":golongan2, "Golongan_3":golongan3}, 200)
 
 def custom_response(res, status_code):
