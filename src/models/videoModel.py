@@ -4,10 +4,7 @@ from . import db
 
 class VideoModel (db.Model):
     __tablename__ = 'Video'
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
     id = db.Column(db.Integer, primary_key=True)
     golongan = db.Column(db.String(5), nullable=True)
     nama_video = db.Column(db.String(128), nullable=True)
@@ -15,10 +12,6 @@ class VideoModel (db.Model):
     created_at = db.Column(db.DateTime)
     modified_at = db.Column(db.DateTime)
 
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
     def __init__(self, data):
         self.id = data.get ('id')
         self.golongan = data.get ('golongan')
@@ -44,27 +37,15 @@ class VideoModel (db.Model):
     @staticmethod
     def get_all_videos():
         return VideoModel.query.all()
-
-<<<<<<< HEAD
-    #fungsi untuk melakukan filter pada database untuk golongan 1
-=======
->>>>>>> origin/master
+    
     @staticmethod
     def filter_gol1():
         return  VideoModel.query.filter(VideoModel.golongan == "I").count()
 
-<<<<<<< HEAD
-    # fungsi untuk melakukan filter pada database untuk golongan 2
-=======
->>>>>>> origin/master
     @staticmethod
     def filter_gol2():
         return VideoModel.query.filter(VideoModel.golongan == "II").count()
 
-<<<<<<< HEAD
-    # fungsi untuk melakukan filter pada database untuk golongan 3
-=======
->>>>>>> origin/master
     @staticmethod
     def filter_gol3():
         return VideoModel.query.filter(VideoModel.golongan == "III").count()
